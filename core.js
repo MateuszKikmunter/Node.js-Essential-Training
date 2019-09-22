@@ -24,8 +24,12 @@ const questions = [
     "What are you going to do with node js? "
 ];
 
-collectAnswers(questions, answers => {
+const answerEvents =  collectAnswers(questions, answers => {
     console.log("Thank you for your answers.");
     console.log(answers);
-    process.exit();
+   process.exit(); 
+});
+
+answerEvents.on("answer", answer => {
+    console.log(`Question answered: ${ answer }`);
 });
