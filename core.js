@@ -16,7 +16,7 @@
 //     console.log(`Your answer: ${ answer }`);
 // });
 
-const collectAnswers = require("./lib/collectAnswers");
+const collectAnswers = require("./lib/collect-answers");
 
 const questions = [
     "What is your name? ",

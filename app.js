@@ -1,4 +1,4 @@
-const counter = require("./myModule");
+const counter = require("./my-module");
 
 counter.increment();
 counter.increment();
