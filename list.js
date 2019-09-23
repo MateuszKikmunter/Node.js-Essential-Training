@@ -14,4 +14,26 @@ fs.readdir("./assets", (err, files) => {
     console.log(files);
 });
 
-//read file content
+//read file contents synchronously
+const text = fs.readFileSync("./assets/colors.json", "UTF-8");
+console.log(text);
+
+//read file contents async
+fs.readFile("./assets/colors.json", "UTF-8", (err, text) => {
+    if(err) {
+        throw err;
+    }
+
+    console.log("complete reading file");
+    console.log(text);
+});
+
+//read binary file contents async
+fs.readFile("./assets/colors.json", (err, text) => {
+    if(err) {
+        throw err;
+    }
+
+    console.log("complete reading binary file");
+    console.log(text);
+});
