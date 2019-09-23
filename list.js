@@ -13,3 +13,5 @@ fs.readdir("./assets", (err, files) => {
     console.log("complete");
     console.log(files);
 });
+
+//read file content
