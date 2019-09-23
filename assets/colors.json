@@ -4,15 +4,15 @@
     "description": "A list of colors",
     "colorList": [
         {
-            "color": "red",
+            "name": "red",
             "hex": "#FF0000"
         },
         {
-            "color": "green",
+            "name": "green",
             "hex": "#00FF00"
         },
         {
-            "color": "blue",
+            "name": "blue",
             "hex": "#0000FF"
         }
     ]
