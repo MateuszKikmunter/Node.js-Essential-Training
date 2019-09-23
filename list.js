@@ -29,7 +29,7 @@ fs.readFile("./assets/colors.json", "UTF-8", (err, text) => {
 });
 
 //read binary file contents async
-fs.readFile("./assets/colors.json", (err, text) => {
+fs.readFile("./assets/matt.png", (err, text) => {
     if(err) {
         throw err;
     }
